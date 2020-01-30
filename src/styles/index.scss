@@ -1,0 +1,246 @@
+@import 'layout';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800&display=swap');
+
+$font-stack: 'Montserrat', Helvetica, sans-serif;
+$primary-color: #333;
+$max-width-desktop: 1280px;
+$container-padding: 1.45rem 1.0875rem;
+
+body {
+  font: 100% $font-stack;
+  // background: $primary-color;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span {
+  font-family: $font-stack;
+}
+
+.nav-header {
+  max-width: $max-width-desktop;
+  position: relative;
+  padding-bottom: 48px;
+  z-index: 2;
+  margin: auto;
+  .nav-menu {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    p {
+      color: white;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+// Hero section
+#hero-section {
+  background: linear-gradient(#4EA9BA, #3586C1);
+  margin-top: -100px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  position: relative;
+  .container {
+    max-width: $max-width-desktop;
+    margin: auto;
+    padding: $container-padding;
+    display: flex;
+    .hero-image {
+      margin-top: calc(-110px - 1.45rem);
+      width: 25%;
+    }
+    .hero-text {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10rem;
+      padding-right: 6rem;
+      color: white;
+      .title {
+        font-size: 3rem;
+        font-weight: 800;
+      }
+      .text {
+        font-size: 1.25rem;
+      }
+      .download-button {
+        border-radius: 200px;
+        padding: 0.5rem 1.4rem 0.5rem 0.5rem;
+        font-size: 16px;
+        display: inline-flex;
+        &.app-store {
+          margin-right: 2rem;
+        }
+        &.play-store {
+          background-color: black;
+          border-color: black;
+          .button-text {
+            color: white;
+          }
+        }
+        .button-icon {
+          height: 40px;
+          width: 40px;
+          border-radius: 40px;
+          background-color: green;
+          display: inline-block;
+          margin-right: 0.2rem;
+        }
+        .button-text {
+          display: flex;
+          flex-direction: column;
+          margin-left: 0.5rem;
+          align-items: flex-start;
+        }
+        h3 {
+          font-size: 22px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+// Sign up section
+#sign-up-section {
+  position: relative;
+  padding-top: 200px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: -200px;
+    height: 200px;
+    background-color: white;
+    opacity: 1;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+  .container {
+    position: relative;
+    max-width: $max-width-desktop;
+    margin: auto;
+    margin-top: -250px;
+    padding: $container-padding;
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      .card {
+        width: 375px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 2.5rem 2rem;
+        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+        .image {
+          width: 100%;
+          height: 250px;
+          display: block;
+          background-color: aliceblue;
+          margin-bottom: 1.5rem;
+        }
+        h2 {
+          margin-bottom: 0.75rem;
+        }
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+// Implementation section
+#implementation-section {
+  background: #F2F7FC;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 200px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    background-color: white;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+  .container {
+    z-index: 0;
+    max-width: $max-width-desktop;
+    margin: auto;
+    margin-top: 50px;
+    padding: $container-padding;
+    .implementation-section-1 {
+      .implementation-text-1 {
+        max-width: 50%;
+        padding-right: 1rem;
+      }
+    }
+    .implementation-section-2 {
+      margin-top: 100px;
+      padding: $container-padding;
+      .implementation-text-2 {
+        max-width: 70%;
+        margin-left: 30%;
+      }
+    }
+  }
+}
+
+// Partner section
+#partner-section {
+  .container {
+    max-width: $max-width-desktop;
+    margin: auto;
+    padding: $container-padding;
+    .partner-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -1.8rem;
+      margin-right: -1.8rem;
+      .logo {
+        filter: grayscale(100%);
+        align-self: center;
+        align-items: center;
+        flex-shrink: 1;
+        max-width: 120px;
+        max-height: 120px;
+        margin: 1.8rem;
+      }
+    }
+  }
+}
+
+// Contact section
+#contact-section {
+  background: #F2F7FC;
+  padding-top: 50px;
+  .container {
+    z-index: 0;
+    max-width: $max-width-desktop;
+    margin: auto;
+    padding: $container-padding;
+  }
+}
+
+// footer 
+footer {
+  background: #F2F7FC;
+  .container {
+    max-width: $max-width-desktop;
+    padding: $container-padding;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
