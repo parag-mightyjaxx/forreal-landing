@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import "../styles/index.scss"
@@ -36,9 +36,10 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <div className="container">
-            © {new Date().getFullYear()}, Mighty Jaxx International Pte Ltd <br />
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            {/* © {new Date().getFullYear()}, Mighty Jaxx International Pte Ltd <br />
             21 Tai Seng Drive #06-00 Singapore 535223 <br />
-            All rights reserved <br />
+            All rights reserved <br /> */}
           </div>
         </footer>
       </div>

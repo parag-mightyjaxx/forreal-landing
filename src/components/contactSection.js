@@ -1,6 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import heroImage from "../images/hero-image.svg"
 
 const ContactSection = () => {
 
@@ -11,10 +9,7 @@ const ContactSection = () => {
           <h1 className="title">Join the club.</h1>
           <p className="text">
             Contact us to see how we can secure your physical collectibles. <br />
-            Email us at email@mightyjaxx.com to know more
-          </p>
-          <p>
-            Share via:
+            Email us at help@mightyjaxx.com to know more
           </p>
         </div>
       </div>
