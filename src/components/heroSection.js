@@ -42,12 +42,12 @@ const HeroSection = () => {
         <div className="available-text">
           <h3>Available on</h3>
           <div className="button-container">
-            <Link className="download-button app-store">
+            <a href="https://apps.apple.com/sg/app/forreal-app/id1506653955" className="download-button app-store">
               <img className="app-store" src={appStoreImage} />
-            </Link>
-            <Link className="download-button play-store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.app.forreal" className="download-button play-store">
                 <img className="play-store" src={playStoreImage} />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

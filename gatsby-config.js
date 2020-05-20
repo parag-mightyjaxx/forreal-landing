@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Mighty Proof`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Forreal Technology`,
+    description: `We power real brands. Sign up, scan and authenticate your product with the Forreal app today.`,
     author: `parag-mightyjaxx`,
   },
   plugins: [
