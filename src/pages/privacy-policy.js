@@ -6,7 +6,7 @@ import HeroSection from "../components/heroSection"
 
 const PrivacyPolicy = () => (
   <Layout>
-    <SEO title="Forreal Technology | Privacy Policy" />
+    <SEO title="Privacy Policy" />
     <div className="text-wall">
     <h4>Privacy Policy</h4>
     <p>Mighty Jaxx built the Forreal Technology app as a Free app. This Service is provided by Mighty Jaxx at no cost and is intended for use as is.</p>

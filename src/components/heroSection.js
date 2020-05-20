@@ -26,7 +26,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="hero-text">
           <h1 className="title">We power<br/>real brands.</h1>
-          <p className="text">Sign up, scan and authenticate your <br/> product with Forreal app today.</p>
+          <p className="text">Sign up, scan and authenticate your <br/> product with the Forreal app today.</p>
         </div>
         <Slider {...settings}>
           <div className="slider-slide">
