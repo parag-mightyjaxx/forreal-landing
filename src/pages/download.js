@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect} from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -26,17 +26,18 @@ function getMobileOperatingSystem() {
 
 function DetectAndServe(){
   let os = getMobileOperatingSystem();
-  if (os == "Android") {
+  if (os === "Android") {
       window.location.href = "https://play.google.com/store/apps/details?id=com.app.forreal"; 
-  } else if (os == "iOS") {
+  } else if (os === "iOS") {
       window.location.href = "https://apps.apple.com/sg/app/forreal-app/id1506653955";
   } else {
       window.location.href = "https://forreal.technology/";
   }
 }
 const SecondPage = () => {
-
-  DetectAndServe();
+  useEffect(() => {
+    DetectAndServe();
+  });
 
   return (
   <Layout>
